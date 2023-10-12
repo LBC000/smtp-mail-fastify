@@ -35,7 +35,6 @@ const receiver = {
     <h1>你好,你的摸鱼程度符合本公司要求,请尽快加入我们</h1>
   `,
 };
-```
 
 1、全局安装插件：npm i pm2 -g
 2、启动项目：pm2 start 脚本 --name 自定义名称
@@ -46,3 +45,6 @@ const receiver = {
 
 启动
   pm2 start app.js --name web3ServiceNode
+```
+
+
