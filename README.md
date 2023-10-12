@@ -44,7 +44,7 @@ const receiver = {
 6、删除项目：pm2 delete 自定义名称
 
 启动
-  pm2 start app.js --name web3ServiceNode
+  pm2 start app.js --name smtp-mail-fastify
 ```
 
 
