@@ -45,6 +45,7 @@ const receiver = {
 
 启动
   pm2 start app.js --name smtp-mail-fastify
+  
 ```
 
 
