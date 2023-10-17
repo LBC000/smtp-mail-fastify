@@ -6,6 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "pm2": "pm2 start server.js --name smtp-mail-fastify",
+    "pm2-rest": "pm2 restart smtp-mail-fastify",
     "node": "node server.js"
   },
   "keywords": [],

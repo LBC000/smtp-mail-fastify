@@ -35,15 +35,13 @@ fastify.post("/api/sendEmail", async (request, reply) => {
   const bodyData = request.body;
   console.log("参数", bodyData);
 
-  const authSchema = Joi.object({
-    user: Joi.string().required(),
-    pass: Joi.string().required(),
-  });
-
   const configSchema = Joi.object({
     host: Joi.string().required(),
     port: Joi.string().required(),
-    auth: authSchema.required(),
+    auth: Joi.object({
+      user: Joi.string().required(),
+      pass: Joi.string().required(),
+    }).required(),
   });
 
   const receiverSchema = Joi.object({
